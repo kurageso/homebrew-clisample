@@ -5,42 +5,42 @@
 class Clisample < Formula
   desc ""
   homepage "https://github.com/kurageso/clisample"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kurageso/clisample/releases/download/v0.0.1/clisample_0.0.1_darwin_amd64.tar.gz"
-      sha256 "a327882f673b7536f33ac0ca1dc50a0bfc1e14c52bf95a3cbff83d2a46d395be"
+      url "https://github.com/kurageso/clisample/releases/download/v0.0.2/clisample_0.0.2_darwin_amd64.tar.gz"
+      sha256 "65cd594fc1737fba54b5e90a56e995b0824ce629a8458a81cd86f9c8e72814a5"
 
       def install
-        bin.install "program"
+        bin.install "clisamaple"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kurageso/clisample/releases/download/v0.0.1/clisample_0.0.1_darwin_arm64.tar.gz"
-      sha256 "6ca0458be113eb33e42cb31c2ba3bf136a3bc5e4fea64edd93d69737c1f9b46c"
+      url "https://github.com/kurageso/clisample/releases/download/v0.0.2/clisample_0.0.2_darwin_arm64.tar.gz"
+      sha256 "d6a45935c4b03f734cea4ad0094ee6a3be12c3025e67e02c9e31bd92d4957e0b"
 
       def install
-        bin.install "program"
+        bin.install "clisamaple"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kurageso/clisample/releases/download/v0.0.1/clisample_0.0.1_linux_arm64.tar.gz"
-      sha256 "b8ad0335a65a29472fbd45607592de5e9a0364f6bd23f7a326198a89dc76a464"
+      url "https://github.com/kurageso/clisample/releases/download/v0.0.2/clisample_0.0.2_linux_arm64.tar.gz"
+      sha256 "49560bfaa59288dc742e5412df1c53a83d4a1f04aaeef84f6d99c33dbbf9ed3e"
 
       def install
-        bin.install "program"
+        bin.install "clisamaple"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kurageso/clisample/releases/download/v0.0.1/clisample_0.0.1_linux_amd64.tar.gz"
-      sha256 "76cc4d20dcd9463e57923d4618bdee1db02065159b14219ead2906e7c1e3f221"
+      url "https://github.com/kurageso/clisample/releases/download/v0.0.2/clisample_0.0.2_linux_amd64.tar.gz"
+      sha256 "7df6016d1c7453fb0189768814bab110581e9d53dcdacad976378b64c3b480cd"
 
       def install
-        bin.install "program"
+        bin.install "clisamaple"
       end
     end
   end
