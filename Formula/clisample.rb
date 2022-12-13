@@ -5,42 +5,42 @@
 class Clisample < Formula
   desc ""
   homepage "https://github.com/kurageso/clisample"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kurageso/clisample/releases/download/v0.0.2/clisample_0.0.2_darwin_amd64.tar.gz"
-      sha256 "65cd594fc1737fba54b5e90a56e995b0824ce629a8458a81cd86f9c8e72814a5"
+      url "https://github.com/kurageso/clisample/releases/download/v0.0.3/clisample_0.0.3_darwin_amd64.tar.gz"
+      sha256 "ba1f47be233e26932a66d7857b9ee7a0f7687f09f389faf6fe4e16e295432ac5"
 
       def install
-        bin.install "clisamaple"
+        bin.install "program"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kurageso/clisample/releases/download/v0.0.2/clisample_0.0.2_darwin_arm64.tar.gz"
-      sha256 "d6a45935c4b03f734cea4ad0094ee6a3be12c3025e67e02c9e31bd92d4957e0b"
+      url "https://github.com/kurageso/clisample/releases/download/v0.0.3/clisample_0.0.3_darwin_arm64.tar.gz"
+      sha256 "c2b69529d4ec6e026d851052870a3a68396762cb62c838fc09e7fe1278b04e46"
 
       def install
-        bin.install "clisamaple"
+        bin.install "program"
       end
     end
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kurageso/clisample/releases/download/v0.0.2/clisample_0.0.2_linux_arm64.tar.gz"
-      sha256 "49560bfaa59288dc742e5412df1c53a83d4a1f04aaeef84f6d99c33dbbf9ed3e"
+    if Hardware::CPU.intel?
+      url "https://github.com/kurageso/clisample/releases/download/v0.0.3/clisample_0.0.3_linux_amd64.tar.gz"
+      sha256 "32ef6b552fad364b3d5f5b281991d13e7009e05b46b5813fb5e57d30eba3972a"
 
       def install
-        bin.install "clisamaple"
+        bin.install "program"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/kurageso/clisample/releases/download/v0.0.2/clisample_0.0.2_linux_amd64.tar.gz"
-      sha256 "7df6016d1c7453fb0189768814bab110581e9d53dcdacad976378b64c3b480cd"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/kurageso/clisample/releases/download/v0.0.3/clisample_0.0.3_linux_arm64.tar.gz"
+      sha256 "8fe68fb481f908b41928605a97b9115de7dfdd12665fe0c2c8a788fd2da3c6c4"
 
       def install
-        bin.install "clisamaple"
+        bin.install "program"
       end
     end
   end
